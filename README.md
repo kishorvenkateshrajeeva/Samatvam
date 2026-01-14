@@ -1,5 +1,7 @@
 # Samatvam: The Architecture of Integrity
-**A Philosophy of Systemic Equanimity in an Age of Information Entropy**
+
+## A Philosophy of Systemic Equanimity in an Age of Information Entropy
+
 Most of us live in a state of "Information Abundance" but "Systemic Poverty." We have more tools than our ancestors, yet we suffer from constant, low-grade anxiety. This is the **Arrival Vacuum**—the feeling that despite our movements, our money, and our matter, we are never truly "centered."
 We are fragmented. Our money doesn't talk to our pantries; our travels don't judge safety; our intentions don't talk to our data. This fragmentation is not **Sovereign**.
 ## The Cost of Chaos
