@@ -1,0 +1,225 @@
+<style>
+  .guide-container {
+    max-width: 900px;
+    margin: 20px auto;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: #2d3748;
+  }
+  .guide-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2d3748;
+    padding-bottom: 10px;
+  }
+  /* Accordion Styling */
+  details {
+    border: 1px solid #e2e8f0;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  summary {
+    background: #f8fafc;
+    padding: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary:hover { background: #edf2f7; }
+  summary:after { content: "+"; font-size: 18px; }
+  details[open] summary:after { content: "−"; }
+  details[open] summary { border-bottom: 1px solid #e2e8f0; background: #fff; }
+  /* Table Styling */
+  .city-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  .city-table th {
+    text-align: left;
+    padding: 12px 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #718096;
+    background: #fafafa;
+  }
+  .city-table td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #edf2f7;
+    font-size: 14px;
+  }
+  .metro-text { font-weight: 700; color: #000; }
+  /* Status Tags */
+  .status {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .live { background: #c6f6d5; color: #22543d; text-decoration: none; }
+  .pending { background: #f7fafc; color: #a0aec0; border: 1px solid #e2e8f0; }
+  .mapping { background: #bee3f8; color: #2a4365; }
+</style>
+<div class="guide-container">
+  <h1 class="guide-title">Guide to India's Cities</h1>
+  <details>
+    <summary>India North</summary>
+    <table class="city-table">
+      <thead>
+        <tr>
+          <th>City</th>
+          <th>Purpose</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+<tr><td class="metro-text">Delhi</td><td>Metro Area / Heritage City</td><td><a href="/guides/delhi" class="status live">🟢 Live</a></td></tr>
+<tr><td>Agra</td><td>Heritage City / Destination City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Lucknow</td><td>Heritage City / Small City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Varanasi</td><td>Pilgrimage City / Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Prayagraj</td><td>Pilgrimage City / Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Haridwar</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Ayodhya</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>        
+<tr><td>Amritsar</td><td>Pilgrimage City / Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Chandigarh</td><td>Economy Engine / Planned Hub</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>New Chandigarh</td><td>New India Economy</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Mohali</td><td>Growth Node</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Ludhiana</td><td>Growth Nodes</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Jhansi</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Moradabad</td><td>Growth Nodes</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Aligarh</td><td>Growth Nodes</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Rishikesh</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Kedarnath</td><td>Remote Work City / Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Badrinath</td><td>Remote Work City / Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Shimla</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Manali</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Mussoorie</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Dharamshala</td><td>Remote Work City / Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Landour</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Mcleodganj</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Bir Billing</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Kasol</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Jibhi</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Srinagar</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Leh</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+  <details>
+    <summary>India West</summary>
+    <table class="city-table">
+      <thead>
+        <tr><th>City</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+<tr><td class="metro-text">Mumbai</td><td>Metro Area / Economy Engine</td><td><a href="/guides/mumbai" class="status live">🟢 Live</a></td></tr>
+<tr><td>Pune</td><td>Heritage City / Economy Engine</td><td><span class="status mapping">🔵 Mapping</span></td></tr>
+<tr><td>Ahmedabad</td><td>Heritage City / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Surat</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Nagpur</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Jaipur</td><td>Heritage City / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Udaipur</td><td>Heritage City / Destination City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Jodhpur</td><td>Heritage City / Destination City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Jaisalmer</td><td>Heritage City / Destination City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Pushkar</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Goa</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Aurangabad</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Shirdi</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Dwarka</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Vadodara</td><td>Future India Economy</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Somnath</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Gandhinagar</td><td>Growth Node</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Dholera</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+  <details>
+    <summary>India Central</summary>
+    <table class="city-table">
+      <thead>
+        <tr><th>City</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+<tr><td>Indore</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Bhopal</td><td>Growth Node / Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Ujjain</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Gwalior</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Khajuraho</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Raipur</td><td>Growth Node</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Naya Raipur</td><td>New India Economy</td><td><span class="status pending">⚪ Pending</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+  <details>
+    <summary>India East</summary>
+    <table class="city-table">
+      <thead>
+        <tr><th>City</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+<tr><td class="metro-text">Kolkata</td><td>Metro Area / Heritage City</td><td><a href="/guides/kolkata" class="status live">🟢 Live</a></td></tr>
+<tr><td>Jamshedpur</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Durgapur</td><td>Growth Node</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Patna</td><td>Growth Node</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Bodh Gaya</td><td>Pilgrimage City / Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Puri</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Bhubaneswar</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Ranchi</td><td>Small City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+  <details>
+    <summary>India Far East</summary>
+    <table class="city-table">
+      <thead>
+        <tr><th>City</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+<tr><td>Guwahati</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Gangtok</td><td>Remote Work</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Shillong</td><td>Remote Work</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Imphal</td><td>Remote Work</td><td><span class="status pending">⚪ Pending</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+  <details>
+    <summary>India South</summary>
+    <table class="city-table">
+      <thead>
+        <tr><th>City</th><th>Purpose</th><th>Status</th></tr>
+      </thead>
+      <tbody>
+<tr><td class="metro-text">Bengaluru</td><td>Metro Area / Tech Hub</td><td><a href="/guides/bengaluru" class="status live">🟢 Live</a></td></tr>
+<tr><td class="metro-text">Chennai</td><td>Metro Area / Heritage City</td><td><a href="/guides/chennai" class="status live">🟢 Live</a></td></tr>
+<tr><td class="metro-text">Hyderabad</td><td>Metro Area / Economy Engine</td><td><a href="/guides/hyderabad" class="status live">🟢 Live</a></td></tr>
+<tr><td>Kochi</td><td>Growth Node / Workation City</td><td><span class="status mapping">🔵 Mapping</span></td></tr>
+<tr><td>Thiruvananthapuram</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Varkala</td><td>Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Kumarakom</td><td>Destination City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Mysore</td><td>Heritage City / Destination City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Mangalore</td><td>Heritage City / Growth Node</td><td><span class="status mapping">🔵 Mapping</span></td></tr>
+<tr><td>Hospet</td><td>New India Economy</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Hubballi - Dharwad</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Kanchipuram</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Thanjavur</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Coimbatore</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Madurai</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Tirupati</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Vishakhapatnam</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Vijayawada</td><td>Growth Node / Economy Engine</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Hampi</td><td>Heritage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Puducherry</td><td>Workation City / Remote Work City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Sivakasi</td><td>New India Economy</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Tirupur</td><td>Growth Node</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Kanyakumari</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+<tr><td>Rameshwaram</td><td>Pilgrimage City</td><td><span class="status pending">⚪ Pending</span></td></tr>
+      </tbody>
+    </table>
+  </details>
+
+</div>
