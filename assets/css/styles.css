@@ -78,44 +78,75 @@ h5 {
     margin-top: 0; 
 }
 
-/* --- 1. New: Floating In-Guide Navigation Sticky Bar --- */
+/* --- Upgraded Segmented Navigation Architecture --- */
 .guide-nav-sticky {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(255, 255, 255, 0.96);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: 2px solid #d63031;
-    margin: -40px -40px 30px -40px; /* Counteracts .content-card structural padding */
-    padding: 15px 40px;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid #e0e0e0;
+    margin: -40px -40px 30px -40px; 
+    padding: 12px 40px;
     display: flex;
-    gap: 20px;
+    gap: 12px;
     overflow-x: auto;
     white-space: nowrap;
-    scrollbar-width: none; /* Firefox layout */
+    scrollbar-width: none; 
 }
 
 .guide-nav-sticky::-webkit-scrollbar {
-    display: none; /* Chrome/Safari layout */
+    display: none; 
 }
 
+/* Base Pill Style */
 .guide-nav-sticky a {
-    color: #2d3436;
+    color: #4a4a4a;
+    background: #f1f2f6;
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: all 0.2s ease;
+    letter-spacing: 0.8px;
+    padding: 8px 16px;
+    border-radius: 20px; /* Turns text into button pills */
+    border: 1px solid #e4e7eb;
+    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* High-Agency Hover / Focus States */
 .guide-nav-sticky a:hover {
+    background: #ffffff;
+    color: #d63031;
+    border-color: #d63031;
+    box-shadow: 0 2px 4px rgba(214, 48, 49, 0.1);
+}
+
+/* Macro-Zone Selector Polish (The Red Anchors) */
+.guide-nav-sticky a[href^="#macro"],
+.guide-nav-sticky a[href^="#south"],
+.guide-nav-sticky a[href^="#central"],
+.guide-nav-sticky a[href^="#western"],
+.guide-nav-sticky a[href^="#north"],
+.guide-nav-sticky a[href^="#navi"],
+.guide-nav-sticky a[href^="#thane"] {
     background: #fff0f0;
     color: #d63031;
+    border-color: #ffcccc;
+}
+
+.guide-nav-sticky a[href^="#macro"]:hover,
+.guide-nav-sticky a[href^="#south"]:hover,
+.guide-nav-sticky a[href^="#central"]:hover,
+.guide-nav-sticky a[href^="#western"]:hover,
+.guide-nav-sticky a[href^="#north"]:hover,
+.guide-nav-sticky a[href^="#navi"]:hover,
+.guide-nav-sticky a[href^="#thane"]:hover {
+    background: #d63031;
+    color: #ffffff;
+    border-color: #d63031;
 }
 
 /* --- 2. New: Gridlock-Probe Transit Metrics Block --- */
