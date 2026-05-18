@@ -1,10 +1,7 @@
 /* ==========================================================================
-   Samatvam Systems: Global Sarvatram Core Stylesheet
-   Version: 2.0 (Integrated Transit Navigation & Gridlock Probes)
-   Sovereign Styling: Clean, manual, zero external dependencies.
+   Samatvam Systems: Upgraded Minimalist Stylesheet
    ========================================================================== */
 
-/* --- Core Base Architecture --- */
 body { 
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
     line-height: 1.7; 
@@ -34,51 +31,13 @@ body {
     text-decoration: none;
 }
 
-.breadcrumb a:hover {
-    text-decoration: underline;
-}
+h1 { color: #2d3436; border-bottom: 3px solid #d63031; padding-bottom: 10px; margin-bottom: 5px; }
+h2 { color: #636e72; font-weight: 400; margin-top: 0; margin-bottom: 30px; font-size: 1.2rem; }
+h3 { color: #d63031; margin-top: 40px; border-left: 4px solid #d63031; padding-left: 15px; }
+h4 { color: #2d3436; margin-bottom: 15px; margin-top: 30px; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+h5 { color: #636e72; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; margin-bottom: 12px; margin-top: 0; }
 
-/* --- Typography Framework --- */
-h1 { 
-    color: #2d3436; 
-    border-bottom: 3px solid #d63031; 
-    padding-bottom: 10px; 
-    margin-bottom: 5px; 
-}
-
-h2 { 
-    color: #636e72; 
-    font-weight: 400; 
-    margin-top: 0; 
-    margin-bottom: 30px; 
-    font-size: 1.2rem; 
-}
-
-h3 { 
-    color: #d63031; 
-    margin-top: 40px; 
-    border-left: 4px solid #d63031; 
-    padding-left: 15px; 
-}
-
-h4 { 
-    color: #2d3436; 
-    margin-bottom: 15px; 
-    margin-top: 30px; 
-    border-bottom: 1px solid #eee; 
-    padding-bottom: 5px; 
-}
-
-h5 { 
-    color: #636e72; 
-    text-transform: uppercase; 
-    font-size: 0.8rem; 
-    letter-spacing: 1px; 
-    margin-bottom: 12px; 
-    margin-top: 0; 
-}
-
-/* --- High-Velocity Ultra-Compact Sticky Nav --- */
+/* Ultra-Compact Sticky Single Line Navigation Bar */
 .guide-nav-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -92,13 +51,15 @@ h5 {
     padding: 10px 40px;
     display: flex;
     gap: 8px;
-    overflow-x: auto; /* Allows horizontal swiping on a single line */
+    overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none; 
 }
+
 .guide-nav-sticky::-webkit-scrollbar {
     display: none; 
 }
+
 .guide-nav-sticky a {
     color: #2d3436;
     background: #f1f2f6;
@@ -112,12 +73,28 @@ h5 {
     border: 1px solid #e4e7eb;
     transition: all 0.1s ease;
 }
+
 .guide-nav-sticky a:hover {
     background: #d63031;
     color: #ffffff;
     border-color: #d63031;
 }
-/* --- 2. New: Gridlock-Probe Transit Metrics Block --- */
+
+/* Hardcoded Standard Visual Background Icon Boxes */
+.icon-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff0f0;
+    color: #d63031;
+    font-weight: bold;
+    font-size: 0.9rem;
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    margin-right: 4px;
+}
+
 .gridlock-probe {
     background: #fff3cd;
     border-left: 4px solid #ffc107;
@@ -126,13 +103,6 @@ h5 {
     margin: 25px 0;
     font-size: 0.9rem;
     color: #856404;
-}
-
-.gridlock-probe h5 {
-    color: #856404;
-    margin: 0 0 10px 0;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
 }
 
 .probe-metric-grid {
@@ -149,11 +119,6 @@ h5 {
     border: 1px solid rgba(0,0,0,0.05);
 }
 
-.probe-item strong {
-    color: #d63031;
-}
-
-/* --- High-Agency Data Grids & Legend --- */
 .legend-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -164,10 +129,6 @@ h5 {
     border: 1px solid #ffcccc;
     margin-bottom: 30px;
     font-size: 0.85rem;
-}
-
-.legend-item strong { 
-    color: #d63031; 
 }
 
 .data-grid {
@@ -187,13 +148,6 @@ h5 {
     gap: 8px;
 }
 
-.icon {
-    width: 18px;
-    height: 18px;
-    fill: #d63031;
-}
-
-/* --- Responsive 1200x600 Production Banner Container --- */
 .banner-container {
     width: 100%;
     max-width: 850px;
@@ -212,7 +166,6 @@ h5 {
     display: block;
 }
 
-/* --- Sovereign Custom Capability Tables --- */
 .capability-table {
     width: 100%;
     border-collapse: collapse;
@@ -233,13 +186,8 @@ h5 {
     font-weight: 600;
 }
 
-/* --- Case-by-Case Heritage Layout Structure --- */
 .heritage-section {
     margin: 25px 0;
-}
-
-.heritage-section hr {
-    margin: 15px 0;
 }
 
 .heritage-grid {
@@ -254,16 +202,11 @@ h5 {
     margin-bottom: 12px;
 }
 
-.heritage-col p:last-child {
-    margin-bottom: 0;
-}
-
-/* --- Specialized Public Infrastructure Block --- */
 .infra-block {
     background-color: #f0f4f8;
     border-top: 4px solid #2980b9;
     padding: 25px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 4px;
     margin: 25px 0;
     font-size: 0.9rem;
 }
@@ -286,21 +229,4 @@ h5 {
     margin-bottom: 10px;
 }
 
-/* --- General Layout Utilities --- */
-hr { 
-    border: 0; 
-    border-top: 1px solid #eee; 
-    margin: 40px 0; 
-}
-
-strong { 
-    color: #000; 
-}
-
-ul { 
-    padding-left: 20px; 
-}
-
-li { 
-    margin-bottom: 8px; 
-}
+hr { border: 0; border-top: 1px solid #eee; margin: 40px 0; }
